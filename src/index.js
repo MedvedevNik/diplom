@@ -1,1 +1,4 @@
-console.log(1);
+import toggleModal from './modules/modal';
+
+
+toggleModal();
