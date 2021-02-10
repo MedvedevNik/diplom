@@ -14,17 +14,14 @@ const toggleModal = () => {
 
   modalOverlay.addEventListener('click', event => {
     let target = event.target;
-    console.log(1);
 
     if (target.closest('.modal-close')) {
       modalOverlay.style.display = 'none';
-      modalCallback.style.display = 'none';
     } else {
       target = target.closest('.modal-callback');
 
       if (!target) {
-      modalOverlay.style.display = 'none';
-      modalCallback.style.display = 'none';
+        modalOverlay.style.display = 'none';
       }
     }
   });

@@ -476,6 +476,8 @@ a.absolute {
 	-o-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
 	letter-spacing: 0.5px;
+	outline: none;
+	border: none;
 }
 .callback-btn .fa {
 	margin: 0 4px 0 0;
@@ -497,6 +499,8 @@ a.absolute {
 	background: transparent;
 	border: 1px solid #fff;
 	font-weight: normal;
+	outline: none;
+	border: none;
 }
 .advantages {
 	position: relative;
