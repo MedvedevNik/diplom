@@ -32,13 +32,13 @@ const slider = () => {
 
   const autoPlaySlide = () => {
 
-    prevSlide(slide, currentSlide, 'item-active');
+    prevSlide(slide, currentSlide, 'relative');
     prevSlide(dots, currentSlide, 'slick-active');
     currentSlide++;
     if (currentSlide >= slide.length) {
       currentSlide = 0;
     }
-    nextSlide(slide, currentSlide, 'item-active');
+    nextSlide(slide, currentSlide, 'relative');
     nextSlide(dots, currentSlide, 'slick-active');
   };
 
@@ -59,7 +59,7 @@ const slider = () => {
       return;
     }
 
-    prevSlide(slide, currentSlide, 'item-active');
+    prevSlide(slide, currentSlide, 'relative');
     prevSlide(dots, currentSlide, 'slick-active');
 
     if (target.matches('.dot')) {
@@ -79,7 +79,7 @@ const slider = () => {
       currentSlide = slide.length - 1;
     }
 
-    nextSlide(slide, currentSlide, 'item-active');
+    nextSlide(slide, currentSlide, 'relative');
     nextSlide(dots, currentSlide, 'slick-active');
 
   });
@@ -96,7 +96,7 @@ const slider = () => {
     }
   });
 
-  startSlide(1500);
+  startSlide(5000);
 };
 
 export default slider;

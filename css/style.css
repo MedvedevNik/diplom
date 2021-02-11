@@ -859,6 +859,10 @@ hr.white {
 .top-slider .item {
 	overflow: hidden;
 	height: 450px;
+	display: none;
+}
+.top-slider .relative {
+	display: block;
 	position: relative;
 }
 .top-slider .item:before {
@@ -870,9 +874,6 @@ hr.white {
 	top: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.5);
-}
-.top-slider .item-active {
-	
 }
 .top-slider .table {
 	position: relative;
@@ -939,8 +940,6 @@ video#video_background {
 		height: 520px;
 	}
 	.top-slider .table {
-		opacity: 0;
-		visibility: hidden;
 		-webkit-transform: scale(1.5);
 		-ms-transform: scale(1.5);
 		-o-transform: scale(1.5);
