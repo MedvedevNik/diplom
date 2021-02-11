@@ -19,14 +19,16 @@ const sendForm = () => {
     inputPhone.value = '';
   }
 
-  const loadForm = () => {
-    const form = document.querySelector('.form'),
-      statusMessage = document.createElement('div');
+  const loadForm = form => {
+    const statusMessage = document.createElement('div');
 
     statusMessage.style.cssText = 'font-size: 2rem;';
     statusMessage.style.color = '#000';
 
     form.append(statusMessage);
+
+    
+    console.log(form);
 
     statusMessage.style.display = 'block';
     statusMessage.textContent = loadMessage;
@@ -52,9 +54,7 @@ const sendForm = () => {
   document.body.addEventListener('submit', event => {
     event.preventDefault();
     const target = event.target;
-    if (target.matches('.form')) {
-      loadForm();
-    }
+    loadForm(target);
   });
 };
 
