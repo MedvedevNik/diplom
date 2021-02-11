@@ -4,9 +4,10 @@ import maskPhone from './modules/maskPhone';
 import falidation from './modules/falidation';
 import scroll from './modules/scroll';
 import slider from './modules/slider';
+import toTop from './modules/toTop';
 
 
-
+toTop();
 
 scroll();
 
