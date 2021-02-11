@@ -49,7 +49,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar falidation = function falidation() {\n  document.body.addEventListener('input', function (event) {\n    var target = event.target;\n\n    if (target.name === 'fio') {\n      target.setAttribute('pattern', '[А-ЯЁ]{1}[а-яё]{1,49}');\n      target.setAttribute('maxlength', 50);\n      target.value = target.value.replace(/[^А-Яёа-яё ]/gi, '');\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (falidation);\n\n//# sourceURL=webpack://diplom.light/./src/modules/falidation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar falidation = function falidation() {\n  document.body.addEventListener('input', function (event) {\n    var target = event.target;\n\n    if (target.name === 'fio') {\n      target.setAttribute('pattern', '[А-ЯЁ]{1}[а-яё]{1,49}');\n      target.setAttribute('maxlength', 50);\n      target.value = target.value.replace(/[^А-Яёа-яё ]/gi, '');\n    }\n\n    if (target.name === 'tel') {\n      target.setAttribute('pattern', '[0-9+()-]{16}');\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (falidation);\n\n//# sourceURL=webpack://diplom.light/./src/modules/falidation.js?");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar toggleModal = function toggleModal() {\n  var callbackBtn = document.querySelectorAll('.callback-btn'),\n      modalOverlay = document.querySelector('.modal-overlay'),\n      modalCallback = document.querySelector('.modal-callback');\n  callbackBtn.forEach(function (elem) {\n    elem.addEventListener('click', function () {\n      modalOverlay.style.display = 'block';\n      modalCallback.style.display = 'block';\n    });\n  });\n  modalOverlay.addEventListener('click', function (event) {\n    var target = event.target;\n\n    if (target.closest('.modal-close')) {\n      modalOverlay.style.display = 'none';\n    } else {\n      target = target.closest('.modal-callback');\n\n      if (!target) {\n        modalOverlay.style.display = 'none';\n      }\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleModal);\n\n//# sourceURL=webpack://diplom.light/./src/modules/modal.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar toggleModal = function toggleModal() {\n  var callbackBtn = document.querySelectorAll('.callback-btn'),\n      modalOverlay = document.querySelector('.modal-overlay'),\n      modalCallback = document.querySelector('.modal-callback');\n  callbackBtn.forEach(function (elem) {\n    elem.addEventListener('click', function () {\n      modalOverlay.style.display = 'block';\n      modalCallback.style.display = 'block';\n      document.body.style.overflowY = 'hidden';\n    });\n  });\n  modalOverlay.addEventListener('click', function (event) {\n    var target = event.target;\n\n    if (target.closest('.modal-close')) {\n      modalOverlay.style.display = 'none';\n      document.body.style.overflowY = 'overlay';\n    } else {\n      target = target.closest('.modal-callback');\n\n      if (!target) {\n        modalOverlay.style.display = 'none';\n        document.body.style.overflowY = 'overlay';\n      }\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toggleModal);\n\n//# sourceURL=webpack://diplom.light/./src/modules/modal.js?");
 
 /***/ }),
 
@@ -510,7 +510,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("e6a9f3f3a3a11bab056e")
+/******/ 		__webpack_require__.h = () => ("0054bc25d79d05cb373b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

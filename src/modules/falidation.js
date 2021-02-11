@@ -9,6 +9,9 @@ const falidation = () => {
       target.setAttribute('maxlength', 50);
       target.value = target.value.replace(/[^А-Яёа-яё ]/gi, '');
     }
+    if (target.name === 'tel') {
+      target.setAttribute('pattern', '[0-9+()-]{16}');
+    }
   });
 };
 

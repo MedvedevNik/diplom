@@ -7,6 +7,7 @@ const toggleModal = () => {
     elem.addEventListener('click', () => {
       modalOverlay.style.display = 'block';
       modalCallback.style.display = 'block';
+      document.body.style.overflowY = 'hidden';
     });
   });
 
@@ -17,11 +18,13 @@ const toggleModal = () => {
 
     if (target.closest('.modal-close')) {
       modalOverlay.style.display = 'none';
+      document.body.style.overflowY = 'overlay';
     } else {
       target = target.closest('.modal-callback');
 
       if (!target) {
         modalOverlay.style.display = 'none';
+        document.body.style.overflowY = 'overlay';
       }
     }
   });
