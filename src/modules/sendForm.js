@@ -32,7 +32,6 @@ const sendForm = () => {
 
     statusMessage.style.display = 'block';
     statusMessage.textContent = loadMessage;
-    clearInput();
 
     postData(Object.fromEntries(new FormData(form)))
       .then(response => {
@@ -49,6 +48,8 @@ const sendForm = () => {
           statusMessage.style.display = 'none';
         },1500);
       });
+
+      clearInput();
   }
 
   document.body.addEventListener('submit', event => {

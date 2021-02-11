@@ -1,8 +1,6 @@
 const scroll = () => {
   const anchors = document.querySelectorAll('.anchor');
 
-  console.log(anchors);
-
   for (const anchor of anchors) {
     anchor.addEventListener('click', event => {
       event.preventDefault();

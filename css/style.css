@@ -871,6 +871,9 @@ hr.white {
 	left: 0;
 	background: rgba(0, 0, 0, 0.5);
 }
+.top-slider .item-active {
+	
+}
 .top-slider .table {
 	position: relative;
 	z-index: 10;
