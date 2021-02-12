@@ -1,5 +1,5 @@
 const toggleModal = () => {
-  const callbackBtn = document.querySelectorAll('.callback-btn'),
+  const callbackBtn = document.querySelectorAll('.modal-btn'),
       modalOverlay = document.querySelector('.modal-overlay'),
       modalCallback = document.querySelector('.modal-callback');
 
