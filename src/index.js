@@ -6,6 +6,7 @@ import scroll from './modules/scroll';
 import slider from './modules/slider';
 import toTop from './modules/toTop';
 import accordeon from './modules/accordeon';
+import sliderCarousel from './modules/sliderCarousel';
 
 accordeon();
 
@@ -18,6 +19,8 @@ slider();
 toggleModal();
 
 falidation();
+
+sliderCarousel();
 
 sendForm();
 
