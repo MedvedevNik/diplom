@@ -12,8 +12,6 @@ const toTop = () => {
       window.addEventListener('scroll', () => {
           const scrolled = window.pageYOffset;
 
-          console.log(scrolled)
-
           if (scrolled >= 600) {
               scrollUp.style.display = 'block';
           } else {

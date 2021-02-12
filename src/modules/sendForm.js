@@ -27,9 +27,6 @@ const sendForm = () => {
 
     form.append(statusMessage);
 
-    
-    console.log(form);
-
     statusMessage.style.display = 'block';
     statusMessage.textContent = loadMessage;
 

@@ -5,7 +5,9 @@ import falidation from './modules/falidation';
 import scroll from './modules/scroll';
 import slider from './modules/slider';
 import toTop from './modules/toTop';
+import accordeon from './modules/accordeon';
 
+accordeon();
 
 toTop();
 

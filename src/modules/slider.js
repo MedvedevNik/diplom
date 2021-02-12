@@ -2,8 +2,6 @@ const slider = () => {
   const slide = document.querySelectorAll('.item'),
     slider = document.querySelector('.top-slider');
 
-  console.log(slide);
-
   let currentSlide = 0,
     interval;
 
