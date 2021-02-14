@@ -94,7 +94,7 @@ const slider = () => {
     }
   });
 
-  startSlide(5000);
+  startSlide(3000);
 };
 
 export default slider;
